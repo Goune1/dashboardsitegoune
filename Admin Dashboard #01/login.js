@@ -8,7 +8,7 @@ submit.addEventListener('click', function() {
     if (mdp === "1234") {
         // Le mot de passe est correct, vous pouvez effectuer des actions ici
         // Par exemple, rediriger l'utilisateur vers une autre page ou afficher un message de succès
-        location.href("https://gounevps.com/index.html")
+        window.location.href("https://gounevps.com/index.html")
         console.log("Mot de passe correct !");
         
     } else {
