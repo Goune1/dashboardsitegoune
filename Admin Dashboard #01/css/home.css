@@ -1,0 +1,186 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color:  #181a1e;
+}
+
+/* NAVBAR */
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Questrial', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a:hover {
+	color:orange
+}
+
+
+header {
+	position: relative;
+	padding: 0 2rem;
+}
+
+.navbar {
+	width: 100%;
+	height: 60px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar .logo a {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.navbar .links {
+	display: flex;
+	gap: 2rem;
+}
+
+.navbar .toggle_btn {
+	color: black;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: none;
+}
+
+.action_btn {
+	background-color: red;
+	color: black;
+	padding: 0.5rem 1rem;
+	border:none;
+	outline: none;
+	border-radius: 20px;
+	font-size: 0.8rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.action_btn:hover {
+	scale: 1.05;
+	color: black;
+}
+
+
+
+
+
+/* ACCEUIL */
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width: 100%;
+}
+
+h1 {
+	margin-top: -200px;
+	text-align: center;
+	font-size: 3em;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+}
+
+p {
+	text-align: center;
+	font-size: 1.5em;
+	color: white;
+	font-family: 'Questrial', sans-serif;
+}
+
+button {	
+	width: 20%;
+	height: 40px;
+	border-radius: 40px;
+	background: white;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 0.5em;
+	font-weight: 600;
+    font-family: 'Questrial', sans-serif;
+}
+
+button:hover {
+	scale: 1.05;
+	color: black;
+}
+
+.loginbutton {
+    font-size: 1em;
+    color: black;
+}
+
+.login {
+    padding-top: 50px;
+}
+
+
+
+
+
+.moderationPanel {
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+
+.ecoPanel {
+	padding-top: 700px;
+}
+
+.lolPanel {
+	padding-top: 800px;
+}
+
+.divers {
+	padding-top: 700px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 3em;
+	color: white;
+	font-family: 'Questrial', sans-serif;
+}
+
+img {
+	padding-top: 50px;
+	display: block;
+	position: absolute;
+	left: 37%;
+}
+
+.meteo {
+	align-items: center;
+	width: 300%;
+}
+
+
+/* FOOTER */
+
+footer {
+	background: black;
+	color: white;
+	font-size: 1em;
+}
+
+

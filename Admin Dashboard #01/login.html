@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
 
@@ -18,8 +18,14 @@
             <div class="form-box login">
                 <form class="login_form" method="post" name="form">
                     <div class="input-box">
+                        <label>Adresse Email</label>
+                        <input type="text" id="email">
+                        
+                    </div>
+                    <div class="input-box">
                         <label>Mot de passe</label>
-                        <input type="password" id="password"> 
+                        <input type="password" id="password">
+                        
                     </div>
                     <div class="btn">
                         <button type="submit" id="submit" onclick="auth()">Se connecter</button>
@@ -30,24 +36,21 @@
 
         <script>
             function auth() {
+                var email = document.getElementById("email").value
                 var password = document.getElementById("password").value
-                if(password == "1234") {
-                    window.location.assign("index.html")
-                    alert("ok")
+                if(email == "goune.ledreo@gmail.com" && password == "goune1407") {
+                    window.location.assign("dashboard.html")
+                    alert("OK")
                 } 
                 else {
-                    console.log("refusé")
+                    alert("Accès refusé.")
                     return
                 }
             }
         </script>
+
         
     </main>
-
-
-
-
-   
 
 </body>
 
