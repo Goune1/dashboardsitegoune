@@ -22,19 +22,32 @@
                         <input type="password" id="password"> 
                     </div>
                     <div class="btn">
-                        <button type="submit" id="submit">Se connecter</button>
+                        <button type="submit" id="submit" onclick="auth()">Se connecter</button>
                     </div>
                 </form>
             </div>
         </div>
 
+        <script>
+            function auth() {
+                var password = document.getElementById("password").value
+                if(password == "1234") {
+                    window.location.assign("index.html")
+                    alert("OK")
+                } 
+                else {
+                    console.log("refusé")
+                    return
+                }
+            }
+        </script>
         
     </main>
 
 
 
 
-    <script src="login.js"></script>
+   
 
 </body>
 
